@@ -1,0 +1,35 @@
+print(' Input, Output, and String Formatting')
+name = input('Enter your name: ') 
+profession = input('Enter your profession: ') 
+fun_fact = input('Tell me a fun fact about yourself: ') 
+print(f'\nName: {name}\nProfession: {profession}\nFun Fact: {fun_fact}\n')
+print('-----------------------------------')
+print('Your Name is {}, and your profession is {}.'.format(name, profession))
+height = float(input('Enter your height in meters: ')) 
+weight = float(input('Enter your weight in kilograms: ')) 
+bmi = weight / (height ** 2)
+print(f'Your BMI is: {bmi:.2f}')
+print('-----------------------------------')
+sentence = 'I love programming in Python.'
+print('Uppercase:', sentence.upper())
+print('Lowercase:', sentence.lower())
+print('Title Case:', sentence.title())
+print('-----------------------------------')
+
+print('Input Validation and Error Handling ')
+age = input('Enter your age: ')
+if age.isdigit():
+         age = int(age)
+         print(f'You are {age} years old.')   
+else:
+                    print('Invalid input. Please enter a numeric value for age.')
+print('-----------------------------------')
+story = input('Tell me a short story: ') 
+print(f'\nYour Story:\n{story}')
+print('-----------------------------------')
+print('Write a Python program that asks the user to enter five hobbies, stores them in a list, and prints the list after each input.')
+hobbies=[]
+for i in range(5):
+        hobby = input(f'Enter hobby {i+1}: ')
+        hobbies.append(hobby)
+        print('Current Hobbies List:', hobbies)
